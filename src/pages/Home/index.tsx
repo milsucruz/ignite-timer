@@ -21,12 +21,25 @@ const newCycleFormValidationSchema = zod.object({
     .max(60, 'O ciclo precisa ser de no máximo 60 minutos!'),
 })
 
+// Usar a "interface" quando se vai definir o objeto de validação e usar o "type" quando for criar uma tipagem a partir de outra referência
+// interface newCycleFormData {
+//   task: string
+//   minutesAmount: number
+// }
+
+// Converte a varivel Js (newCycleFormValidationSchema) em uma tipagem, específico do typeScript (através do typeof)
+type newCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
+
 export function Home() {
-  const { register, handleSubmit, watch } = useForm({
+  const { register, handleSubmit, watch } = useForm<newCycleFormData>({
     resolver: zodResolver(newCycleFormValidationSchema),
+    defaultValues: {
+      task: '',
+      minutesAmount: 0,
+    },
   })
 
-  function handleCreateNewCycle(data: any) {
+  function handleCreateNewCycle(data: newCycleFormData) {
     console.log(data)
   }
 
