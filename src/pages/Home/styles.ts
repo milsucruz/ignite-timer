@@ -8,6 +8,8 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
 
+  padding: 3rem; // Não tem no projeto
+
   form {
     display: flex;
     flex-direction: column;
@@ -61,13 +63,13 @@ export const MinutesAmountInput = styled(BaseInput)`
 `
 
 export const CountDownContainer = styled.div`
-  display: flex;
-  gap: 1rem;
-
   font-family: 'Roboto Mono', monospace;
   font-size: 10rem;
   line-height: 8rem;
   color: ${(props) => props.theme['gray-100']};
+
+  display: flex;
+  gap: 1rem;
 
   span {
     background: ${(props) => props.theme['gray-700']};
