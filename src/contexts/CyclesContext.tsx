@@ -9,7 +9,7 @@ interface Cycle {
   id: string
   task: string
   minutesAmount: number
-  startData: Date
+  startDate: Date
   interruptedDate?: Date
   finishedDate?: Date
 }
@@ -63,7 +63,7 @@ export function CyclesContextProvider({
       id,
       task: data.task,
       minutesAmount: data.minutesAmount,
-      startData: new Date(),
+      startDate: new Date(),
     }
 
     setCycles((state) => [...state, newCycle])
