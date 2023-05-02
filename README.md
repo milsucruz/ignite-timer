@@ -17,6 +17,8 @@
 > [Phosphor](https://www.npmjs.com/package/phosphor-react)
 >
 > [Styled Components](https://styled-components.com/)
+>
+> [ESlint](https://eslint.org/)
 
 > ## Como executar ⚙️
 
