@@ -19,6 +19,8 @@
 > [Styled Components](https://styled-components.com/)
 >
 > [ESlint](https://eslint.org/)
+>
+> [React Router](https://reactrouter.com/en/main)
 
 > ## Como executar ⚙️
 
