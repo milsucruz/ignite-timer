@@ -25,6 +25,8 @@
 > [Zod](https://zod.dev/)
 >
 > [Date-fns](https://date-fns.org/docs/Getting-Started)
+>
+> [Immer](https://github.com/immerjs/immer)
 
 > ## Como executar ⚙️
 
