@@ -21,6 +21,10 @@
 > [ESlint](https://eslint.org/)
 >
 > [React Router](https://reactrouter.com/en/main)
+>
+> [Zod](https://zod.dev/)
+>
+> [Date-fns](https://date-fns.org/docs/Getting-Started)
 
 > ## Como executar ⚙️
 
